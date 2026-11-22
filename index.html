@@ -64,7 +64,7 @@
 <body>
 
 <h1>OddO’clock Privacy Policy</h1>
-<p class="updated">Effective Date: September 18, 2026</p>
+<p class="updated">Effective Date: November 22, 2026</p>
 
 <p>
     OddO’clock is designed to help users manage rotating work schedules,
@@ -86,14 +86,15 @@
     <li>Analytics services</li>
     <li>Tracking technologies</li>
     <li>Third-party data brokers</li>
-    <li>User accounts</li>
+    <li>OddO’clock user accounts</li>
     <li>Developer-operated cloud storage</li>
     <li>Developer-operated telemetry or crash-reporting services</li>
 </ul>
 
 <p>
-    Based on the current implementation, information stored and processed
-    by OddO’clock remains on the user's device.
+    Schedules, preferences, and imported audio are stored locally.
+    Purchases and access verification use Apple's StoreKit services,
+    as described below.
 </p>
 
 <h2>2. Information Stored on Your Device</h2>
@@ -116,6 +117,24 @@
 <p>
     This information is stored locally using Apple platform storage
     technologies such as SwiftData and UserDefaults.
+</p>
+
+<h3>Purchases and Trial Access</h3>
+
+<p>
+    OddO’clock uses Apple's StoreKit services for purchases, the free trial,
+    access verification, and Restore Purchases. These operations may
+    communicate with Apple. The app processes verified purchase information,
+    including product and transaction identifiers, purchase dates, and
+    ownership or revocation status, to determine access.
+</p>
+
+<p>
+    To preserve the original trial period, OddO’clock stores a trial record
+    in the device Keychain. This includes the trial product and original
+    transaction identifiers, original purchase date, date-validation
+    information, and trial-policy information. The app does not enable
+    iCloud synchronization for this record.
 </p>
 
 <h2>3. Alarm Sounds and Imported Audio</h2>
@@ -217,6 +236,7 @@
 </p>
 
 <ul>
+    <li>StoreKit purchases, access verification, and purchase restoration</li>
     <li>Device backups</li>
     <li>Apple system services</li>
     <li>Cloud-based file providers used through the Files app</li>
@@ -231,7 +251,7 @@
 <h2>9. Data Retention</h2>
 
 <p>
-    App data remains stored on the device until it is changed or removed
+    Schedules, preferences, and imported audio remain on the device until changed or removed
     by the user, removed by an app feature, or removed when the app and its
     associated local data are deleted.
 </p>
@@ -260,8 +280,11 @@
 </p>
 
 <p>
-    Deleting OddO’clock from the device removes the app's locally stored
-    application data according to Apple's normal app-deletion behavior.
+    Deleting OddO’clock removes its application-container data according
+    to Apple's normal app-deletion behavior. Trial records in the device
+    Keychain may remain after deletion, depending on iOS behavior.
+    Reinstalling the app or using Restore Purchases does not restart the
+    trial, which is based on the verified original trial purchase date.
 </p>
 
 <p>
@@ -347,7 +370,7 @@
 </p>
 
 <footer>
-    Last updated: October 8, 2026
+    Last updated: November 22, 2026
 </footer>
 
 </body>
